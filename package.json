@@ -1,11 +1,15 @@
 {
   "name": "todo-app",
+  "homepage": "https://xavigrandes.github.io/todo-tasks-vuejs/",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "vue": "^3.2.45",
@@ -13,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "vite": "^4.0.0"
   }
 }
